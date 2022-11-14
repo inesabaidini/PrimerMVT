@@ -24,3 +24,19 @@
 
 #VIEWS
 #Agregi views.py dentro de la carpeta primermvt
+#Para que me cargue todas las carpetas en github puse git add . y desp el commit y el push
+#Voy a urls.py y agrego from primermvt.views import * para que me quede importadas todas mis views
+
+#MODELO
+#Creo mi modelo o mi app: python manage.py startapp 'familiares'
+#Voy a apps.py dentro de familiares y creo mi class Familia
+#from familiares.models import Familia agrego esto a mi views.py
+#agrego en settings.py mi modulo familiares
+#python manage.py check familiares
+#python manage.py makemigrations
+#python manage.py migrate
+
+
+#SUBIR MIS FAMILIARES A SQLITE
+#Puedo hacerlo a mano desde SQLite o hacerlo con código desde la terminal
+

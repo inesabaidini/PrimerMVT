@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer MVT
+        Sabaidini Inés
+    </title>
+</head>
+<body>
+    <h1 style="color: blueviolet;"> Les presento a mis familiares </h1>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Cumpleanios</th>
+                <th>Pareja</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in listado_familia %}
+            <tr>
+                <td>{{item.nombre}}</td>
+                <td>{{item.apellido}}</td>
+                <td>{{item.edad}}</td>
+                <td>{{item.cumple|date:'Y-m-d'}}</td>
+                <td>{{item.pareja}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
