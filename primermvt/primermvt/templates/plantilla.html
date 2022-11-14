@@ -15,20 +15,16 @@
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Apellido</th>
                 <th>Edad</th>
-                <th>Cumpleanios</th>
-                <th>Pareja</th>
+                <th>Nacimiento</th>
             </tr>
         </thead>
         <tbody>
             {% for item in listado_familia %}
             <tr>
                 <td>{{item.nombre}}</td>
-                <td>{{item.apellido}}</td>
                 <td>{{item.edad}}</td>
-                <td>{{item.cumple|date:'Y-m-d'}}</td>
-                <td>{{item.pareja}}</td>
+                <td>{{item.nacimiento|date:'Y-m-d'}}</td>
             </tr>
             {% endfor %}
         </tbody>

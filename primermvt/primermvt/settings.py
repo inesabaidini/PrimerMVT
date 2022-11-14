@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'familiares',
+    'familia',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'primermvt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\LENOVO\Documents\Python - coderhouse\Proyecto-PrimerMVT\primermvt\primermvt\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

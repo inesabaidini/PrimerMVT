@@ -1,9 +1,11 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Template, Context, loader
-from familiares.models import Familia
+from familia.models import Familia
 
 def familia(request):
-
-    plantilla = loader.get_template('familia.html')
-    documento = plantilla.render()
+    listado_familia = Familia.objects.all()
+    tabla = {'lista_familia': listado_familia}
+    plantilla = loader.get_template('plantilla.html')
+    documento = plantilla.render(tabla)
     return HttpResponse(documento)
