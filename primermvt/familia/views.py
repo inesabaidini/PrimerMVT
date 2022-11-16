@@ -5,8 +5,8 @@ from django.template import Template, Context, loader
 from familia.models import Familia
 
 def familia(request):
-    listado_familia = Familia.objects.all()
-    tabla = {'lista_familia': listado_familia}
+    lista_familia = Familia.objects.all()
+    tabla = {'lista_familia': lista_familia}
     plantilla = loader.get_template('plantilla.html')
     documento = plantilla.render(tabla)
     return HttpResponse(documento)
